@@ -1,0 +1,31 @@
+{
+    "name": "user/solid-principle-in-php",
+    "description": "SOLID: The First 5 Principles of Object Oriented Design",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Solid\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Md. Abdullah Al Mamun Roni",
+            "email": "md.aamroni@gmail.com",
+            "role": "Co-Founder | Software Developer",
+            "homepage": "https://qubenext.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "8.1"
+    },
+    "require-dev": {
+        "pestphp/pest": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}

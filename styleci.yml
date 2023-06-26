@@ -1,0 +1,28 @@
+php:
+  risky: false
+  version: 8.1
+  preset: laravel
+  monolithic: true
+  tab-width: 4
+  use-tabs: false
+  enabled:
+    - length_ordered_imports
+    - assign_null_coalescing_to_coalesce_equal
+    - concat_with_spaces
+    - unaligned_double_arrow
+  disabled:
+    - alpha_ordered_imports
+    - concat_without_spaces
+  finder:
+    exclude:
+      - "modules"
+      - "node_modules"
+      - "nova"
+      - "nova-components"
+      - "storage"
+      - "spark"
+      - "vendor"
+    name: "*.php"
+    not-name:
+      - "*.blade.php"
+      - "_ide_helper.php"
