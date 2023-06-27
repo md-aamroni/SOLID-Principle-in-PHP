@@ -1,6 +1,6 @@
 <?php
 
-namespace Solid\SingleResponsibilityPrinciple\Adapters;
+namespace SRP\Adapters;
 
 trait StringAdapter
 {

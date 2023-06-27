@@ -5,7 +5,12 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Solid\\": "src/"
+            "Solid\\": "src/",
+            "SRP\\": "src/SingleResponsibilityPrinciple/",
+            "OCP\\": "src/OpenClosedPrinciple/",
+            "LSP\\": "src/LiskovSubstitutionPrinciple/",
+            "ISP\\": "src/InterfaceSegregationPrinciple/",
+            "DIP\\": "src/DependencyInversionPrinciple/"
         }
     },
     "authors": [
@@ -18,7 +23,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "php": "8.1"
+        "php": "8.1.*"
     },
     "require-dev": {
         "pestphp/pest": "*"

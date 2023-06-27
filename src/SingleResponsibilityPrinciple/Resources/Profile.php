@@ -1,8 +1,8 @@
 <?php
 
-namespace Solid\SingleResponsibilityPrinciple\Resources;
+namespace SRP\Resources;
 
-use Solid\SingleResponsibilityPrinciple\Interfaces\ConcreteSingleResponsibility;
+use SRP\Interfaces\ConcreteSingleResponsibility;
 
 class Profile extends ConcreteSingleResponsibility
 {
@@ -38,6 +38,15 @@ class Profile extends ConcreteSingleResponsibility
     public function getLastName(): string
     {
         return $this->lastName;
+    }
+
+    /**
+     * Get the last name.
+     * @return string
+     */
+    public function getFullName(): string
+    {
+        return sprintf('%s %s', $this->firstName, $this->lastName);
     }
 
     /**

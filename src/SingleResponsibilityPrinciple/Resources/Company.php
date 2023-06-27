@@ -1,7 +1,12 @@
 <?php
 
-namespace Solid\SingleResponsibilityPrinciple\Resources;
+namespace SRP\Resources;
 
-class Company
+use SRP\Interfaces\ConcreteSingleResponsibility;
+
+class Company extends ConcreteSingleResponsibility
 {
+    public function __construct()
+    {
+    }
 }

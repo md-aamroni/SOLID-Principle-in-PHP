@@ -1,0 +1,13 @@
+#!/usr/bin/php -d memory_limit=2048M -d post_max_size=0
+
+<?php
+
+printf(file_get_contents('./aamroni.txt'));
+
+echo PHP_EOL;
+
+foreach (['Name' => 'Md. Abdullah Al Mamun Roni', 'Mail' => 'md.aamroni@gmail.com', 'Role' => 'Co-Founder | Software Developer', 'Home' => 'https://qubenext.com'] as $item => $each) {
+    echo sprintf('%s: %s', $item, $each) . PHP_EOL;
+}
+
+echo PHP_EOL;

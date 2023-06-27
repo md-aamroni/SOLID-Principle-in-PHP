@@ -1,10 +1,10 @@
 <?php
 
-namespace Solid\SingleResponsibilityPrinciple\Interfaces;
+namespace SRP\Interfaces;
 
-use Solid\SingleResponsibilityPrinciple\Adapters\ArrayAdapter;
-use Solid\SingleResponsibilityPrinciple\Adapters\ObjectAdapter;
-use Solid\SingleResponsibilityPrinciple\Adapters\StringAdapter;
+use SRP\Adapters\ArrayAdapter;
+use SRP\Adapters\ObjectAdapter;
+use SRP\Adapters\StringAdapter;
 
 abstract class ConcreteSingleResponsibility implements SingleResponsibilityInterface
 {

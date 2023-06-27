@@ -1,16 +1,16 @@
 <?php
 
-namespace Solid\SingleResponsibilityPrinciple;
+namespace SRP;
 
-use Solid\SingleResponsibilityPrinciple\Resources\Address;
-use Solid\SingleResponsibilityPrinciple\Resources\Profile;
+use SRP\Resources\Address;
+use SRP\Resources\Profile;
 
 class SalaryEvaluateManager
 {
     /**
-     * Create a new manager instance
-     * @param Profile $profile
-     * @param Address $address
+     * Create a new manager instance.
+     * @param  Profile $profile
+     * @param  Address $address
      * @return void
      */
     public function __construct(private readonly Profile $profile, private readonly Address $address)
@@ -19,7 +19,7 @@ class SalaryEvaluateManager
     }
 
     /**
-     * Get the profile instance
+     * Get the profile instance.
      * @return Profile
      */
     public function getProfile(): Profile
@@ -28,7 +28,7 @@ class SalaryEvaluateManager
     }
 
     /**
-     * Get the address instance
+     * Get the address instance.
      * @return Address
      */
     public function getAddress(): Address

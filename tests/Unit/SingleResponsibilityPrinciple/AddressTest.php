@@ -1,6 +1,6 @@
 <?php
 
-use Solid\SingleResponsibilityPrinciple\Resources\Address;
+use SRP\Resources\Address;
 
 test('test that address can return an array', function () {
     $address = new Address('2957 Vernon Street', 'Vista', 'California - CA', '92083', '33.212688', '-117.162079');

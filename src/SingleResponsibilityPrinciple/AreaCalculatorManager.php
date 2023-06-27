@@ -1,6 +1,6 @@
 <?php
 
-namespace Solid\SingleResponsibilityPrinciple;
+namespace SRP;
 
 class AreaCalculatorManager
 {

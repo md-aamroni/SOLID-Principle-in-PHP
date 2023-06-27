@@ -1,8 +1,8 @@
 <?php
 
-namespace Solid\SingleResponsibilityPrinciple\Resources;
+namespace SRP\Resources;
 
-use Solid\SingleResponsibilityPrinciple\Interfaces\ConcreteSingleResponsibility;
+use SRP\Interfaces\ConcreteSingleResponsibility;
 
 class Address extends ConcreteSingleResponsibility
 {
@@ -52,7 +52,7 @@ class Address extends ConcreteSingleResponsibility
      */
     public function getState(): string
     {
-        return $this->street;
+        return $this->state;
     }
 
     /**

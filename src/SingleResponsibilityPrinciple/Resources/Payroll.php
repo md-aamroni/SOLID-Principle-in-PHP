@@ -1,7 +1,12 @@
 <?php
 
-namespace Solid\SingleResponsibilityPrinciple\Resources;
+namespace SRP\Resources;
 
-class Payroll
+use SRP\Interfaces\ConcreteSingleResponsibility;
+
+class Payroll extends ConcreteSingleResponsibility
 {
+    public function __construct()
+    {
+    }
 }
